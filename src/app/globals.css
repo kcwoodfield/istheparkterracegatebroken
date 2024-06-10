@@ -1,5 +1,10 @@
 p.notice {
   text-align: center;
+  color: #fff;
+	text-align: center;
+	line-height: 110%;
+	text-shadow: 0.05em 0.05em 0.1em #000;
+	text-shadow: 0 0.025em 0.05em rgba(0,0,0,0.75), 0 0.05em 0.1em rgba(0,0,0,0.5);
 }
 
 body {

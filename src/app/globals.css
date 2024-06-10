@@ -1,8 +1,5 @@
-/* Using supplied code from https://www.reddit.com/r/webdev/comments/3ox80m/how_to_vertical_align_using_vh/ */
-
 p.notice {
   text-align: center;
-
 }
 
 .hero {
@@ -19,7 +16,7 @@ p.notice {
 
 .hero h1 {
 	color: #fff;
-	font-family: 'Museo Sans', Avenir, 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: "Rethink Sans", sans-serif;
 	font-weight: 900;
 	font-size: 15vmin;
 	text-align: center;

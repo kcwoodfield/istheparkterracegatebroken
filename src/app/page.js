@@ -2,94 +2,42 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+
+  const yesItems = Array(
+    "yes. dammit.",
+    "You bet! It's our signature feature.",
+    "Of course, it's a new kind of open-door policy.",
+    "yes. park in the rear. watch for homeless.",
+    "yes, this dang gate!",
+    "Yes, because who needs security anyway?",
+    "Sure thing, it's part of the charm.",
+    "Yes, it's always in style.",
+    "yes, of course, wouldn't have it any other way.",
+    "Naturally, it's our way of welcoming everyone.",
+    "Yes, because a working gate is just too mainstream.",
+    "yes. it's fixed. tell your friends.");
+
+  const noItems = Array(
+    "no. it's fixed. relax, brah",
+    "nah, you're good. just do not park in Alicia's spot.",
+    "Absolutely not, we prefer things to be in perfect condition.",
+    "No, because we enjoy fixing things immediately.",
+    "No, forgetaboutit. It's fixed.",
+    "Nope, everything's always pristine around here.",
+    "No, it's always working like a charm.",
+    "No, we don't like to keep people waiting.",
+    "No, we wouldn't dream of having a broken gate."
+  );
+
+
+  const text = yesItems[Math.floor(Math.random()*yesItems.length)];
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main>
+      <p className="notice">refresh for more info</p>
+      <section class="hero">
+        <h1>{text}</h1>
+    </section>
     </main>
   );
 }

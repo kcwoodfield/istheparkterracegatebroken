@@ -20,7 +20,6 @@ const yesItems = Array(
 );
 
 const noItems = Array(
-  { text: "no. it's fixed. relax, brah"},
   { text: "nah, you're good. just do not park in Alicia's spot."},
   { text: "Absolutely not, we prefer things to be in perfect condition."},
   { text: "No, because we enjoy fixing things immediately."},

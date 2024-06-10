@@ -2,10 +2,12 @@ p.notice {
   text-align: center;
 }
 
+body {
+	background: no-repeat fixed url('/gate2.jpg') center / cover; /* from Unsplash */
+}
 .hero {
 	width:100%;
 	min-height:55vh;
-	background: no-repeat fixed url('/gate2.jpg') center / cover; /* from Unsplash */
 	margin-top:50px;
 
 	/* This is what centers it */
@@ -18,9 +20,8 @@ p.notice {
 	color: #fff;
 	font-family: "Rethink Sans", sans-serif;
 	font-weight: 900;
-	font-size: 15vmin;
+	font-size: 7vmin;
 	text-align: center;
-	font-size: 15vmin; /* If you want to be extra-fancy */
 	line-height: 110%;
 	text-shadow: 0.05em 0.05em 0.1em #000;
 	text-shadow: 0 0.025em 0.05em rgba(0,0,0,0.75), 0 0.05em 0.1em rgba(0,0,0,0.5);

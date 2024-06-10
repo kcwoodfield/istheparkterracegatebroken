@@ -5,49 +5,50 @@ import styles from "./page.module.css";
 import { useEffect, useState } from "react";
 
 const yesItems = Array(
-  "yes. dammit.",
-  "You bet! It's our signature feature.",
-  "Of course, it's a new kind of open-door policy.",
-  "yes. park in the rear. watch for homeless.",
-  "yes, this dang gate!",
-  "Yes, because who needs security anyway?",
-  "Sure thing, it's part of the charm.",
-  "Yes, it's always in style.",
-  "yes, of course, wouldn't have it any other way.",
-  "Naturally, it's our way of welcoming everyone.",
-  "Yes, because a working gate is just too mainstream.",
-  "yes. it's fixed. tell your friends.");
-
-const noItems = Array(
-  "no. it's fixed. relax, brah",
-  "nah, you're good. just do not park in Alicia's spot.",
-  "Absolutely not, we prefer things to be in perfect condition.",
-  "No, because we enjoy fixing things immediately.",
-  "No, forgetaboutit. It's fixed.",
-  "Nope, everything's always pristine around here.",
-  "No, it's always working like a charm.",
-  "No, we don't like to keep people waiting.",
-  "No, we wouldn't dream of having a broken gate."
+  { text:  "yes. dammit."},
+  { text:  "You bet! It's our signature feature."},
+  { text:  "Of course, it's a new kind of open-door policy."},
+  { text:  "yes. park in the rear. watch for homeless."},
+  { text:  "yes, this dang gate!"},
+  { text:  "Yes, because who needs security anyway?"},
+  { text:  "Sure thing, it's part of the charm."},
+  { text:  "Yes, it's always in style."},
+  { text:  "yes, of course, wouldn't have it any other way."},
+  { text:  "Naturally, it's our way of welcoming everyone."},
+  { text:  "Yes, because a working gate is just too mainstream."},
+  { text:  "yes. it's fixed. tell your friends."}
 );
 
-const array = [{ name: 1 }, { name: 2 }, { name: 3 }, { name: 4 }, { name: 5 }];
+const noItems = Array(
+  { text: "no. it's fixed. relax, brah"},
+  { text: "nah, you're good. just do not park in Alicia's spot."},
+  { text: "Absolutely not, we prefer things to be in perfect condition."},
+  { text: "No, because we enjoy fixing things immediately."},
+  { text: "Nope, everything's always pristine around here."},
+  { text: "No, it's always working like a charm."},
+  { text: "No, we don't like to keep people waiting."},
+  { text: "No, we wouldn't dream of having a broken gate."}
+);
+
 
 export default function Home() {
-  const [randomText, setRandomText] = useState([]);
   const [randomArray, setRandomArray] = useState([]);
 
   useEffect(() => {
-      const randomizeArray = [...array].sort(() => 0.5 - Math.random());
-      setRandomArray(randomizeArray.slice(0, 3));
+      const randomizeArray = [...noItems].sort(() => 0.5 - Math.random());
+      setRandomArray(randomizeArray.slice(0, 1));
   }, []);
 
   return (
-    <div>
-            {randomArray.map((s, id) => (
-                <div key={id}>
-                    <h2>{s.name}</h2>
-                </div>
-            ))}
-        </div>
+    <main>
+      <p className="notice">refresh for more info</p>
+      <section class="hero">
+      {randomArray.map((s, id) => (
+            <div key={id}>
+                <h1>{s.text}</h1>
+            </div>
+        ))}
+    </section>
+    </main>
   );
 }

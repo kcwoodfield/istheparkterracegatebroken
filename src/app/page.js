@@ -16,8 +16,7 @@ const yesItems = Array(
   { text:  "Yes, it's always in style."},
   { text:  "yes, of course, wouldn't have it any other way."},
   { text:  "Naturally, it's our way of welcoming everyone."},
-  { text:  "Yes, because a working gate is just too mainstream."},
-  { text:  "yes. it's fixed. tell your friends."}
+  { text:  "Yes, because a working gate is just too mainstream."}
 );
 
 const noItems = Array(

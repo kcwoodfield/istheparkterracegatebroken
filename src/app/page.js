@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 const yesItems = Array(
   { text:  "yes. dammit."},
+  { text:  "yes. wow really destroyed that thing."},
   { text:  "You bet! It's our signature feature."},
   { text:  "Of course, it's a new kind of open-door policy."},
   { text:  "yes. park in the rear. watch for homeless."},
@@ -29,12 +30,11 @@ const noItems = Array(
   { text: "No, we wouldn't dream of having a broken gate."}
 );
 
-
 export default function Home() {
   const [randomArray, setRandomArray] = useState([]);
 
   useEffect(() => {
-      const randomizeArray = [...noItems].sort(() => 0.5 - Math.random());
+      const randomizeArray = [...yesItems].sort(() => 0.5 - Math.random());
       setRandomArray(randomizeArray.slice(0, 1));
   }, []);
 

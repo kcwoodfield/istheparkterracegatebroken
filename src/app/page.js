@@ -5,12 +5,10 @@ import styles from "./page.module.css";
 import { useEffect, useState } from "react";
 
 const yesItems = Array(
-  { text:  "yes. dammit."},
   { text:  "yes. wow really destroyed that thing."},
   { text:  "You bet! It's our signature feature."},
   { text:  "Of course, it's a new kind of open-door policy."},
   { text:  "yes. park in the rear. watch for homeless."},
-  { text:  "yes, this dang gate!"},
   { text:  "Yes, because who needs security anyway?"},
   { text:  "Sure thing, it's part of the charm."},
   { text:  "Yes, it's always in style."},
